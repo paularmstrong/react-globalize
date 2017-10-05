@@ -1,6 +1,9 @@
 {
+  "publishConfig": {
+    "registry": "https://artifactory.twitter.biz/api/npm/js-releases-local"
+  },
   "name": "react-globalize",
-  "version": "0.4.1",
+  "version": "0.5.0-twitter-e5d9ac8",
   "description": "Bringing the i18n functionality of Globalize, backed by CLDR, to React",
   "main": "dist/index.js",
   "files": [
@@ -11,7 +14,8 @@
     "src/"
   ],
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "prepublish": "grunt build"
   },
   "keywords": [
     "react",
